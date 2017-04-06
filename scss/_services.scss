@@ -1,0 +1,69 @@
+.services {
+padding-left: 700px;
+padding-bottom: 100px;
+}
+
+
+.services-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  #residential {
+    border: 0px solid #000;
+     border-radius: 5px;
+     height: 240px;
+     width: 230px;
+     background-size: cover;
+   background-repeat: no-repeat;
+    background-position: center;
+     cursor: pointer;
+     box-shadow: 0px 0px 5px gray;
+     margin-bottom: 50px;
+     transition: all .2s ease;
+     }
+  #commercial {
+
+    border: 0px solid #000;
+     border-radius: 5px;
+     height: 240px;
+     width: 230px;
+     background-size: cover;
+   background-repeat: no-repeat;
+    background-position: center;
+     cursor: pointer;
+     box-shadow: 0px 0px 5px gray;
+     margin-bottom: 50px;
+     transition: all .2s ease;
+      }
+  #shampoo {
+
+    border: 0px solid #000;
+     border-radius: 5px;
+     height: 240px;
+     width: 230px;
+     background-size: cover;
+   background-repeat: no-repeat;
+    background-position: center;
+     cursor: pointer;
+     box-shadow: 0px 0px 5px gray;
+     margin-bottom: 50px;
+     transition: all .2s ease;
+      }
+  #powerwashing {
+    border: 0px solid #000;
+     border-radius: 5px;
+     height: 240px;
+     width: 230px;
+     background-size: cover;
+   background-repeat: no-repeat;
+    background-position: center;
+     cursor: pointer;
+     box-shadow: 0px 0px 5px gray;
+     margin-bottom: 50px;
+     transition: all .2s ease;
+
+    }
+
+}

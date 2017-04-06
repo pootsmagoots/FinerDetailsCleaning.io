@@ -1,0 +1,15 @@
+<h1>show</h1>
+
+<section class="centered-container">
+
+  <div class="flex-container">
+    <div class="flex-container" ng-repeat="services in vm.services.show | filter: {services_id: vm.services.id}">
+      <div class="event-info">
+        <h2 ui-sref="eventShow({id: event.id})"><span class="blue-underline">{{event.name}}</span></h2>
+        <h4><span>Address:</span>  {{event.address}}</h4>
+        <h4><span>Category:</span>  {{vm.uppercase(event.category)}}</h4>
+        <h4><span>Phone:</span>  {{event.phone_number}}</h4>
+      </div>
+    </div>
+  </div>
+</section>

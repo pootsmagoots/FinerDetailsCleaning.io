@@ -1,9 +1,10 @@
 angular
 .module("website", [
-  "ui.router"
+  "ui.router",
+  "ngResource"
 ])
 .config([
-  "stateProvider",
+  "$stateProvider",
   RouterFunction
 ])
 .controller("WelcomeController",[
@@ -11,7 +12,7 @@ angular
   "$stateParams",
   WelcomeController
 ])
-.controller("ServiceController",[
+.controller("ServiceIndexController",[
   "$state",
   "$stateParams",
   ServiceIndexController
@@ -21,32 +22,43 @@ angular
   "StateParams",
   ServiceShowController
 ])
-.controller("AboutController", [
+.controller("AboutController",[
   "$state",
   "$stateParams",
   AboutShowController
+])
+.controller("ContactController", [
+  "$state",
+  "$stateParams",
+  ContactShowController
 ])
 
 //Routes
 function RouterFunction($stateProvider){
   $stateProvider
   .state("welcome", {
-    url:"/",
-    templateUrl: "js/nf-views/welcome.html",
+    url: "/",
+    templateUrl: "js/ng-views/welcome.html",
     controller: "WelcomeController",
     controllerAs: "vm"
   })
-  .state("services", {
-    url:"/services",
+  .state("servicesIndex", {
+    url:"/servicesIndex",
     templateUrl:"js/ng-views/services/index.html",
     controller: "ServiceIndexController",
     controllerAs: "vm"
   })
   .state("services", {
-    url:"/services:id",
+    url:"/services/:id",
     templateUrl: "js/ng-views/services/show.html",
     controller: "ServiceShowController",
     controllerAs: "vm"
+  })
+  .state("contact", {
+    url:"/contact",
+    templateUrl:"js/ng-views/contact/show.html",
+    controller: "ContactShowController",
+    ControllerAs: "vm"
   })
   .state("about", {
     url:"/about",
@@ -70,5 +82,9 @@ function ServiceShowController($state, $stateParams) {
 }
 
 function AboutShowController($state, $stateParams) {
+
+}
+
+function ContactShowController($state, $statParams) {
 
 }

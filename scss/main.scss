@@ -1,0 +1,16 @@
+// to have sass watch folders: sass --watch scss:css
+
+//Components
+@import "variables";
+@import "global";
+@import "layout";
+
+
+//Views
+@import "services";
+//
+@import "about";
+//
+@import "contact";
+//
+@import "afstyle";

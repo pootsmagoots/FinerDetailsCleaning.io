@@ -1,0 +1,219 @@
+.welcome-header {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  background: linear-gradient(rgba(218, 200, 169, 0.3), rgba(218, 200, 169, 0.3)), url("../img/home-bg.jpg") fixed no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1; }
+  .welcome-header h2, .welcome-header h4 {
+    color: #fff;
+    font-weight: normal;
+    text-shadow: 2px 2px 3px gray; }
+  .welcome-header h2 {
+    font-size: 46px; }
+  .welcome-header h4 {
+    margin-bottom: 40px;
+    font-family: "Lato", sans-serif;
+    font-size: 36px;
+    font-style: italic; }
+  .welcome-header button {
+    font-size: 26px;
+    padding: 8px 12px; }
+
+button {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  background: #34E96B;
+  width: auto;
+  border: 1px solid #c8c8c8;
+  padding: 5px 8px;
+  font-size: 16px;
+  margin: 5px auto;
+  cursor: pointer;
+  transition: all ease .5s;
+  border-radius: 4px; }
+
+button:hover {
+  color: #000;
+  background: #fff;
+  transition: all ease .5s; }
+
+.flex-container {
+  width: 100%;
+  padding: 0 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between; }
+  @media (min-width: 480px) {
+    .flex-container {
+      flex-direction: row;
+      padding: 0; } }
+
+.flex-cell-1-2 {
+  width: 100%; }
+  @media (min-width: 480px) {
+    .flex-cell-1-2 {
+      width: 49%; } }
+
+.flex-cell-1-3 {
+  width: 100%; }
+  @media (min-width: 480px) {
+    .flex-cell-1-3 {
+      width: 32%; } }
+
+.flex-cell-2-3 {
+  width: 100%; }
+  @media (min-width: 480px) {
+    .flex-cell-2-3 {
+      width: 65%; } }
+
+.flex-cell-1-4 {
+  width: 100%; }
+  @media (min-width: 480px) {
+    .flex-cell-1-4 {
+      width: 24%; } }
+
+.flex-cell-3-4 {
+  width: 100%; }
+  @media (min-width: 480px) {
+    .flex-cell-3-4 {
+      width: 74%; } }
+
+.flex-cont-vertical-center {
+  display: flex;
+  align-items: center; }
+
+.flex-right {
+  justify-content: flex-end; }
+
+.services {
+  padding-left: 700px;
+  padding-bottom: 100px; }
+
+.services-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .services-container #residential {
+    border: 0px solid #000;
+    border-radius: 5px;
+    height: 240px;
+    width: 230px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px gray;
+    margin-bottom: 50px;
+    transition: all .2s ease; }
+  .services-container #commercial {
+    border: 0px solid #000;
+    border-radius: 5px;
+    height: 240px;
+    width: 230px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px gray;
+    margin-bottom: 50px;
+    transition: all .2s ease; }
+  .services-container #shampoo {
+    border: 0px solid #000;
+    border-radius: 5px;
+    height: 240px;
+    width: 230px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px gray;
+    margin-bottom: 50px;
+    transition: all .2s ease; }
+  .services-container #powerwashing {
+    border: 0px solid #000;
+    border-radius: 5px;
+    height: 240px;
+    width: 230px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px gray;
+    margin-bottom: 50px;
+    transition: all .2s ease; }
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 800px;
+  padding: 8px 8px;
+  margin: 0 auto; }
+  .about-container #thomas {
+    border: 0px solid #000;
+    border-radius: 5px;
+    height: 340px;
+    width: 330px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 5px gray;
+    margin-bottom: 50px;
+    transition: all .2s ease; }
+  .about-container #corbin {
+    border: 0px solid #000;
+    border-radius: 5px;
+    height: 340px;
+    width: 330px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 5px gray;
+    margin-bottom: 50px;
+    transition: all .2s ease; }
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical; }
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #34E96B;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #34E96B; }
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #27C7F7;
+  padding: 20px; }
+
+/*# sourceMappingURL=main.css.map */
