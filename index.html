@@ -9,14 +9,22 @@
 </head>
 <body ng-app="website">
 
-
   <nav class="flex-container">
     <div class="flex-cell-1-3 logo">
       <h1><a ui-sref="welcome">Finer Details Cleaning</a></h1>
-      <button ui-sref="about">about</button>
-      <button ui-sref="contact">Contact</button>
     </div>
-</nav>
+    <div class="flex-cell-1-3">
+      <img class="compass" src="img/compass-icon-6.png" ng-click="compassActive = !compassActive" ng-class="{'compass-active':compassActive}">
+    </div>
+    <div class="flex-cell-1-3">
+
+      <!-- <div class="searchbar">
+        <input type="text" placeholder="Filter Results"  ng-model="searchFilter">
+        <img class="search-icon" src="img/search-icon-png.png">
+      </div> -->
+    </div>
+  </nav>
+
 
 
 <main ui-view>

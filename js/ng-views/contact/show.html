@@ -1,10 +1,15 @@
-
-
+<section class="cookie-box" ng-class="{'cookie-box-active': compassActive}">
+  <h3><a ui-sref="welcome">Home</a></h3>
+</section>
 
 
 
 <div class="container">
-  <form action="/action_page.php">
+  <form
+        action="mailto:Corbin@finerdetailscleaning.com"
+        method="POST"
+        enctype="multipart/form-data"
+        name="EmailTestForm">
 
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">

@@ -1,3 +1,11 @@
+const servicesData = [
+  {
+    title: "Powerwashing",
+    discription: "We offer porfessional outdoor powerwashing",
+    // imgurl: url("")
+  }
+]
+
 angular
 .module("website", [
   "ui.router",
@@ -74,7 +82,7 @@ function WelcomeController($state, $stateParams) {
 }
 
 function ServiceIndexController($state, $stateParams) {
-
+  this.services = servicesData
 }
 
 function ServiceShowController($state, $stateParams) {

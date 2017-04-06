@@ -91,15 +91,81 @@ button:hover {
 .flex-right {
   justify-content: flex-end; }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  background: #34E96B;
+  align-items: center;
+  z-index: 3; }
+  nav > div {
+    text-align: center; }
+  nav h1 {
+    font-size: 42px;
+    font-weight: normal;
+    text-shadow: 2px 2px 5px gray; }
+  nav a {
+    text-decoration: none;
+    color: #fff; }
+
+.compass {
+  height: 60px;
+  transform: rotate(0deg);
+  transition: all 1s ease;
+  cursor: pointer; }
+
+.compass-active {
+  transform: rotate(359deg);
+  transition: all 1s ease; }
+
+.searchbar {
+  width: 220px;
+  position: relative;
+  margin: 0 auto; }
+  .searchbar input {
+    background: #FFF;
+    font-size: 18px;
+    width: 100%;
+    border: 1px solid #92959c;
+    border-radius: 20px;
+    padding: 5px 8px;
+    box-shadow: 2px 2px 5px gray; }
+  .searchbar img {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    height: 20px; }
+
+.cookie-box {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #27C7F7;
+  box-shadow: 0 2px 5px gray;
+  transition: height .5s ease;
+  z-index: 2;
+  overflow: hidden;
+  text-align: center; }
+  .cookie-box h3 a {
+    color: #fff; }
+
+.cookie-box-active {
+  height: 40px; }
+
 .services {
-  padding-left: 700px;
-  padding-bottom: 100px; }
+  padding-left: 650px;
+  padding-bottom: 100px;
+  padding-top: 150px; }
 
 .services-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding-top: 70px; }
   .services-container #residential {
     border: 0px solid #000;
     border-radius: 5px;
@@ -149,12 +215,15 @@ button:hover {
     margin-bottom: 50px;
     transition: all .2s ease; }
 
+.text {
+  padding-top: 100px; }
+
 .about-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   max-width: 800px;
-  padding: 8px 8px;
+  padding: 150px 8px;
   margin: 0 auto; }
   .about-container #thomas {
     border: 0px solid #000;
@@ -212,6 +281,7 @@ input[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 .container {
+  margin-top: 100px;
   border-radius: 5px;
   background-color: #27C7F7;
   padding: 20px; }

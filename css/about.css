@@ -1,9 +1,12 @@
+.text {
+  padding-top: 100px; }
+
 .about-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   max-width: 800px;
-  padding: 8px 8px;
+  padding: 150px 8px;
   margin: 0 auto; }
   .about-container #thomas {
     border: 0px solid #000;
