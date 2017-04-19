@@ -6,7 +6,9 @@ $( document ).ready(function(){
 // })
 
 
-$(".test").hover(function(){
-    alert("Bye! You now leave p1!");
-  });
+$( "#residential" ).click(function() {
+  alert( "Handler for .click() called." );
+});
+
+
 })

@@ -1,10 +1,11 @@
-const servicesData = [
-  {
-    title: "Powerwashing",
-    discription: "We offer porfessional outdoor powerwashing",
-    // imgurl: url("")
-  }
-]
+const servicesData = {
+  services: [
+    {title: "Powerwashing", description: "We offer porfessional outdoor powerwashing"},
+    {title: "Residential", description: "We offer porfessional outdoor powerwashing"},
+    {title: "Commercial", description: "We offer porfessional outdoor powerwashing"},
+    {title: "Carpet Shampoo", description: "We offer porfessional outdoor powerwashing"}
+  ]
+ }
 
 angular
 .module("website", [
@@ -25,10 +26,15 @@ angular
   "$stateParams",
   ServiceIndexController
 ])
-.controller("ServiceController",[
+.controller("ServiceShowController",[
   "$state",
-  "StateParams",
+  "$stateParams",
   ServiceShowController
+])
+.controller("ServiceShow1Controller", [
+  "$state",
+  "$stateParams",
+  ServiceShow1Controller
 ])
 .controller("AboutController",[
   "$state",
@@ -56,11 +62,29 @@ function RouterFunction($stateProvider){
     controller: "ServiceIndexController",
     controllerAs: "vm"
   })
-  .state("services", {
-    url:"/services/:id",
+  .state("servicesShow", {
+    url:"/services/residential",
     templateUrl: "js/ng-views/services/show.html",
     controller: "ServiceShowController",
     controllerAs: "vm"
+  })
+  .state("servicesShow1", {
+    url:"/services/powerwashing",
+    templateUrl: "js/ng-views/services/show1.html",
+    controller: "ServiceShow1Controller",
+    controllersAs: "vm"
+  })
+  .state("servicesShow2", {
+    url:"/services/commercial",
+    templateUrl: "js/ng-views/services/show2.html",
+    controller: "ServiceShow2Controller",
+    controllersAs: "vm"
+  })
+  .state("servicesShow3", {
+    url:"/services/carpet-shampoo",
+    templateUrl: "js/ng-views/services/show3.html",
+    controller: "ServiceShow3Controller",
+    controllersAs: "vm"
   })
   .state("contact", {
     url:"/contact",
@@ -82,11 +106,11 @@ function WelcomeController($state, $stateParams) {
 }
 
 function ServiceIndexController($state, $stateParams) {
-  this.services = servicesData
+  this.services = servicesData.services
 }
 
 function ServiceShowController($state, $stateParams) {
-
+  this.services = servicesData.services
 }
 
 function AboutShowController($state, $stateParams) {
@@ -94,5 +118,15 @@ function AboutShowController($state, $stateParams) {
 }
 
 function ContactShowController($state, $statParams) {
+
+}
+
+function ServiceShow1Controller( $state, $stateParams) {
+
+}
+function ServiceShow2Controller( $state, $stateParams) {
+
+}
+function ServiceShow3Controller( $state, $stateParams) {
 
 }

@@ -1,5 +1,7 @@
 
 .about_text {
+  display: flex;
+  justify-content: center;
   padding-top: 100px;
   color: $blue;
 }
