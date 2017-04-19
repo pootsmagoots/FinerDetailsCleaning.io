@@ -1,11 +1,11 @@
-const servicesData = {
-  services: [
-    {title: "Powerwashing", description: "We offer porfessional outdoor powerwashing"},
-    {title: "Residential", description: "We offer porfessional outdoor powerwashing"},
-    {title: "Commercial", description: "We offer porfessional outdoor powerwashing"},
-    {title: "Carpet Shampoo", description: "We offer porfessional outdoor powerwashing"}
-  ]
- }
+// const servicesData = {
+//   services: [
+//     {title: "Powerwashing", description: "We offer porfessional outdoor powerwashing"},
+//     {title: "Residential", description: "We offer porfessional outdoor powerwashing"},
+//     {title: "Commercial", description: "We offer porfessional outdoor powerwashing"},
+//     {title: "Carpet Shampoo", description: "We offer porfessional outdoor powerwashing"}
+//   ]
+//  }
 
 angular
 .module("website", [
@@ -106,11 +106,11 @@ function WelcomeController($state, $stateParams) {
 }
 
 function ServiceIndexController($state, $stateParams) {
-  this.services = servicesData.services
+  // this.services = servicesData.services
 }
 
 function ServiceShowController($state, $stateParams) {
-  this.services = servicesData.services
+  // this.services = servicesData.services
 }
 
 function AboutShowController($state, $stateParams) {
