@@ -11,4 +11,12 @@ $( "#residential" ).click(function() {
 });
 
 
+// 
+// $(function(){
+//     $(".flip").flip({
+//         trigger: 'hover'
+//     });
+// });
+
+
 })

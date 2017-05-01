@@ -14,6 +14,14 @@ nav {
     font-size: 42px;
     font-weight: normal;
     text-shadow: 2px 2px 5px gray;
+    font-family: 'Marcellus SC', serif;
+  }
+  h4 {
+    font-size: 18px;
+    text-shadow: 2px 2px 5px gray;
+    font-weight: normal;
+    color: white;
+    font-family: 'Marcellus SC', serif;
   }
   a {
     text-decoration: none;
@@ -32,26 +40,6 @@ nav {
   transition: all 1s ease;
 }
 
-.searchbar {
-  width: 220px;
-  position: relative;
-  margin: 0 auto;
-  input {
-    background: #FFF;
-    font-size: 18px;
-    width: 100%;
-    border: 1px solid $darkgray;
-    border-radius: 20px;
-    padding: 5px 8px;
-    box-shadow: 2px 2px 5px gray;
-  }
-  img {
-    position: absolute;
-    right: 0px;
-    top: 5px;
-    height: 20px;
-  }
-}
 
 .cookie-box {
   position: fixed;

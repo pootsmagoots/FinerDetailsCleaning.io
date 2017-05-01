@@ -1,3 +1,16 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: -10px;
+  height: 60px;
+  justify-content: center; }
+
 .welcome-header {
   display: flex;
   position: absolute;
@@ -12,10 +25,14 @@
   .welcome-header h2, .welcome-header h4 {
     color: #fff;
     font-weight: normal;
-    text-shadow: 2px 2px 3px gray; }
+    text-shadow: 2px 2px 3px gray;
+    font-family: 'Marcellus SC', serif; }
   .welcome-header h2 {
+    padding-top: 50px;
+    padding-bottom: 100px;
     font-size: 46px; }
   .welcome-header h4 {
+    padding-bottom: 50px;
     margin-bottom: 40px;
     font-family: "Lato", sans-serif;
     font-size: 36px;
@@ -39,7 +56,7 @@ button {
 
 button:hover {
   color: #000;
-  background: #fff;
+  background: #27C7F7;
   transition: all ease .5s; }
 
 .flex-container {
@@ -104,7 +121,14 @@ nav {
   nav h1 {
     font-size: 42px;
     font-weight: normal;
-    text-shadow: 2px 2px 5px gray; }
+    text-shadow: 2px 2px 5px gray;
+    font-family: 'Marcellus SC', serif; }
+  nav h4 {
+    font-size: 18px;
+    text-shadow: 2px 2px 5px gray;
+    font-weight: normal;
+    color: white;
+    font-family: 'Marcellus SC', serif; }
   nav a {
     text-decoration: none;
     color: #fff; }
@@ -118,24 +142,6 @@ nav {
 .compass-active {
   transform: rotate(359deg);
   transition: all 1s ease; }
-
-.searchbar {
-  width: 220px;
-  position: relative;
-  margin: 0 auto; }
-  .searchbar input {
-    background: #FFF;
-    font-size: 18px;
-    width: 100%;
-    border: 1px solid #92959c;
-    border-radius: 20px;
-    padding: 5px 8px;
-    box-shadow: 2px 2px 5px gray; }
-  .searchbar img {
-    position: absolute;
-    right: 0px;
-    top: 5px;
-    height: 20px; }
 
 .cookie-box {
   position: fixed;
@@ -180,7 +186,7 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 30px; }
+  padding-top: 50px; }
   .services-container #residential {
     border: 0px solid #000;
     border-radius: 5px;
@@ -191,7 +197,7 @@ nav {
     background-position: center;
     cursor: pointer;
     box-shadow: 0px 0px 5px gray;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     transition: all .2s ease; }
   .services-container .style_text:hover {
     color: #34E96B; }
@@ -207,7 +213,7 @@ nav {
     background-position: center;
     cursor: pointer;
     box-shadow: 0px 0px 5px gray;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     transition: all .2s ease; }
   .services-container #shampoo {
     border: 0px solid #000;
@@ -219,7 +225,7 @@ nav {
     background-position: center;
     cursor: pointer;
     box-shadow: 0px 0px 5px gray;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     transition: all .2s ease; }
   .services-container #powerwashing {
     border: 0px solid #000;
@@ -231,7 +237,7 @@ nav {
     background-position: center;
     cursor: pointer;
     box-shadow: 0px 0px 5px gray;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     transition: all .2s ease; }
 
 .rw-wrapper {
@@ -240,18 +246,6 @@ nav {
   margin: 110px auto 0 auto;
   font-family: 'Bree Serif';
   padding: 10px; }
-
-.rw-sentence {
-  margin: 0;
-  text-align: left;
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8); }
-
-.mainpage span {
-  margin-left: 10px;
-  font-size: 100px;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 200%;
-  font-weight: normal; }
 
 .rw-words {
   display: inline;
@@ -369,11 +363,109 @@ nav {
 @media screen and (max-width: 320px) {
   .rw-sentence {
     font-size: 9px; } }
+.location-header {
+  padding-top: 81px; }
+
+.footer-distributed {
+  background-color: #34E96B;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 110%;
+  text-align: left;
+  font: bold 16px sans-serif; }
+
+/* Footer left */
+.footer-distributed .footer-left {
+  width: 40%; }
+
+/* Footer links */
+.footer-distributed .footer-left {
+  color: #ffffff;
+  margin: 13.5px 0 12px;
+  padding: 0; }
+
+.footer-distributed .footer-right {
+  color: black;
+  margin: 20px 0 12px;
+  padding: 0; }
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: white; }
+
+.footer-links a:hover {
+  color: #27C7F7; }
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0; }
+
+/* Footer Right */
+.footer-distributed .footer-right {
+  width: 20%; }
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0; }
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+.footer-distributed .footer-icons {
+  margin-top: 25px; }
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px; }
+
+/* If you don't want the footer to be responsive, remove these media queries */
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif; }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center; }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0; } }
 .about_text {
   display: flex;
   justify-content: center;
   padding-top: 100px;
-  color: #27C7F7; }
+  color: #27C7F7;
+  padding-bottom: 50px; }
+
+.about_description {
+  display: flex;
+  justify-content: center;
+  color: #34E96B;
+  font-size: 22px; }
 
 .about-container {
   display: flex;
@@ -391,7 +483,6 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0px 0px 5px gray;
-    margin-bottom: 50px;
     transition: all .2s ease; }
   .about-container #corbin {
     border: 0px solid #000;
@@ -402,7 +493,6 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0px 0px 5px gray;
-    margin-bottom: 50px;
     transition: all .2s ease; }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -450,5 +540,58 @@ input[type=submit]:hover {
   justify-content: center;
   width: 100%;
   height: 200px; }
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  background: #34E96B;
+  align-items: center;
+  z-index: 3; }
+  nav > div {
+    text-align: center; }
+  nav h1 {
+    font-size: 42px;
+    font-weight: normal;
+    text-shadow: 2px 2px 5px gray;
+    font-family: 'Marcellus SC', serif; }
+  nav h4 {
+    font-size: 18px;
+    text-shadow: 2px 2px 5px gray;
+    font-weight: normal;
+    color: white;
+    font-family: 'Marcellus SC', serif; }
+  nav a {
+    text-decoration: none;
+    color: #fff; }
+
+.compass {
+  height: 60px;
+  transform: rotate(0deg);
+  transition: all 1s ease;
+  cursor: pointer; }
+
+.compass-active {
+  transform: rotate(359deg);
+  transition: all 1s ease; }
+
+.cookie-box {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #27C7F7;
+  box-shadow: 0 2px 5px gray;
+  transition: height .5s ease;
+  z-index: 2;
+  overflow: hidden;
+  text-align: center; }
+  .cookie-box h3 a {
+    color: #fff; }
+
+.cookie-box-active {
+  height: 40px; }
 
 /*# sourceMappingURL=main.css.map */

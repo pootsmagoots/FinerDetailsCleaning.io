@@ -8,16 +8,17 @@
 <img class="finerDetails" src="img/finer_details.png" alt="Finer Details" />
 
 <div class="container">
+
   <form
         action="mailto:Corbin@finerdetailscleaning.com"
         method="POST"
         enctype="multipart/form-data"
         name="EmailTestForm">
 
-    <label for="fname">First Name</label>
+    <label for="fname">First Name | Last Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-    <label for="lname">Last Name</label>
+    <label for="lname">Contact Information</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
 
@@ -28,3 +29,19 @@
 
   </form>
 </div>
+
+<footer class="footer-distributed">
+ <div class="footer-left">
+   <p class="footer-links">
+     <a ui-sref="welcome">Home -</a>
+     <a ui-sref="servicesIndex">Services -</a>
+     <a ui-sref="about">About -</a>
+     <a ui-sref="contact">Contact </a>
+      </p>
+ </div>
+ <div class ="footer-right">
+   <p>
+     Finer Details Cleaning © 2017
+   </p>
+ </div>
+ </footer>

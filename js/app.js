@@ -36,15 +36,25 @@ angular
   "$stateParams",
   ServiceShow1Controller
 ])
-.controller("AboutController",[
+.controller("AboutShowController",[
   "$state",
   "$stateParams",
   AboutShowController
 ])
-.controller("ContactController", [
+.controller("ContactShowController", [
   "$state",
   "$stateParams",
   ContactShowController
+])
+.controller("ServiceShow2Controller", [
+  "$state",
+  "$stateParams",
+  ServiceShow2Controller
+])
+.controller("ServiceShow3Controller", [
+  "$state",
+  "$stateParams",
+  ServiceShow3Controller
 ])
 
 //Routes
