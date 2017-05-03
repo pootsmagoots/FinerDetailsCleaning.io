@@ -12,7 +12,7 @@ footer{
   margin-left: -10px;
   height:60px;
   justify-content: center;
-  
+
 }
 
 .welcome-header {
@@ -74,4 +74,215 @@ button:hover {
   color: #000;
   background: $blue;
   transition: all ease .5s;
+}
+
+.footer-distributed{
+	background-color: $green;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 110%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+}
+
+
+.footer-distributed .footer-left{
+	width: 40%;
+
+}
+
+
+
+.footer-distributed .footer-left {
+	color:  #ffffff;
+	margin: 13.5px 0 12px;
+	padding: 0;
+}
+.footer-distributed .footer-right {
+	color:  black;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  white;
+}
+
+.footer-links a:hover {
+  color: $blue;
+
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+ .footer-distributed .footer-right{
+ 	width: 20%;
+ }
+
+ .footer-distributed .footer-company-about{
+ 	line-height: 20px;
+ 	color:  #92999f;
+ 	font-size: 13px;
+ 	font-weight: normal;
+ 	margin: 0;
+ }
+
+ .footer-distributed .footer-company-about span{
+ 	display: block;
+ 	color:  #ffffff;
+ 	font-size: 14px;
+ 	font-weight: bold;
+ 	margin-bottom: 20px;
+ }
+
+ .footer-distributed .footer-icons 	{
+ margin-top: 25px;
+ }
+
+ .footer-distributed .footer-icons a{
+ 	display: inline-block;
+ 	width: 35px;
+ 	height: 35px;
+ 	cursor: pointer;
+ 	background-color:  #33383b;
+ 	border-radius: 2px;
+
+ 	font-size: 20px;
+ 	color: #ffffff;
+ 	text-align: center;
+ 	line-height: 35px;
+
+ 	margin-right: 3px;
+ 	margin-bottom: 5px;
+ }
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+@import url(http://fonts.googleapis.com/css?family=Merriweather:700);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+body,html {margin:0;}
+img {max-width:100%}
+.notes {padding: 50px 0px; background:#0f1d28;}
+.notes p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  margin:auto;
+  color: #fff;
+  max-width:500px;
+  text-align:center;
+}
+.notes h1 {
+  font-family: 'Merriweather', serif;
+  margin:auto;
+  color: #fff;
+  max-width:500px;
+  text-align:center;
+}
+.color1 { background:#ace6d1;}
+.color2 {background:#2a2c39;}
+.container {max-width:300px; margin: auto; padding:80px 0px}
+/* Info boxe ONE
+-------------------------------------------------- */
+
+.stack {
+	  	-webkit-box-sizing: border-box;  	/* Safari/Chrome, other WebKit */
+  		-moz-box-sizing: border-box;  	/* Firefox, other Gecko */
+	  	box-sizing: border-box;  	/* Opera/IE 8+ */
+
+  	width:100%;
+	  height:auto;
+	  padding:5px;
+	  color:#424242;
+  	border: 3px solid #fff;
+	  text-align:center;
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+}
+
+.upper {
+   -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.5);
+  box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.5);
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.upper p { padding:0px 10px 35px 10px; text-align:justify;}
+
+.lower {
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.4);
+  -moz-box-shadow:    0px 2px 4px 0px rgba(50, 50, 50, 0.4);
+  box-shadow:         0px 2px 4px 0px rgba(50, 50, 50, 0.4);
+
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+
+	max-width: 230px;
+   margin:-20px auto 0px auto;
+	z-index:1;
+}
+
+.lower a {
+  font-family: 'Merriweather', serif;
+	text-transform:uppercase;
+	font-size:14px;
+	letter-spacing:1px;
+   color: #253e5e;
+
+  -webkit-transition: color ease-out .3s;
+    -moz-transition: olor ease-out .3s;
+    -o-transition: olor ease-out .3s;
+    transition: olor ease-out .3s;
+}
+
+.lower a:hover { color:#1d76ad; }
+
+.box h2 {
+  font-family: 'Merriweather', serif;
+  text-transform:uppercase;
+  color:#fff;
+  font-size:24px;
+  line-height:28px;
+  margin-bottom:5px;
+}
+
+.box p:last-of-type { border-bottom:none; }
+
+@media (min-width: 768px) and (max-width: 979px) {
+	  .box p { margin:0px 10px; }
+	  .lower { max-width: 180px; }
 }

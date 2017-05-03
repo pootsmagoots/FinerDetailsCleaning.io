@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 * {
   margin: 0;
   padding: 0; }
@@ -59,6 +61,199 @@ button:hover {
   background: #27C7F7;
   transition: all ease .5s; }
 
+.footer-distributed {
+  background-color: #34E96B;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 110%;
+  text-align: left;
+  font: bold 16px sans-serif; }
+
+.footer-distributed .footer-left {
+  width: 40%; }
+
+.footer-distributed .footer-left {
+  color: #ffffff;
+  margin: 13.5px 0 12px;
+  padding: 0; }
+
+.footer-distributed .footer-right {
+  color: black;
+  margin: 20px 0 12px;
+  padding: 0; }
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: white; }
+
+.footer-links a:hover {
+  color: #27C7F7; }
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0; }
+
+.footer-distributed .footer-right {
+  width: 20%; }
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0; }
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+.footer-distributed .footer-icons {
+  margin-top: 25px; }
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px; }
+
+/* If you don't want the footer to be responsive, remove these media queries */
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif; }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center; }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0; } }
+body, html {
+  margin: 0; }
+
+img {
+  max-width: 100%; }
+
+.notes {
+  padding: 50px 0px;
+  background: #0f1d28; }
+
+.notes p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  margin: auto;
+  color: #fff;
+  max-width: 500px;
+  text-align: center; }
+
+.notes h1 {
+  font-family: 'Merriweather', serif;
+  margin: auto;
+  color: #fff;
+  max-width: 500px;
+  text-align: center; }
+
+.color1 {
+  background: #ace6d1; }
+
+.color2 {
+  background: #2a2c39; }
+
+.container {
+  max-width: 300px;
+  margin: auto;
+  padding: 80px 0px; }
+
+/* Info boxe ONE
+-------------------------------------------------- */
+.stack {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  color: #424242;
+  border: 3px solid #fff;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px; }
+
+.upper {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+.upper p {
+  padding: 0px 10px 35px 10px;
+  text-align: justify; }
+
+.lower {
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.4);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.4);
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.4);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  max-width: 230px;
+  margin: -20px auto 0px auto;
+  z-index: 1; }
+
+.lower a {
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #253e5e;
+  -webkit-transition: color ease-out .3s;
+  -moz-transition: olor ease-out .3s;
+  -o-transition: olor ease-out .3s;
+  transition: olor ease-out .3s; }
+
+.lower a:hover {
+  color: #1d76ad; }
+
+.box h2 {
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 5px; }
+
+.box p:last-of-type {
+  border-bottom: none; }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .box p {
+    margin: 0px 10px; }
+
+  .lower {
+    max-width: 180px; } }
 .flex-container {
   width: 100%;
   padding: 0 5px;
@@ -119,10 +314,11 @@ nav {
   nav > div {
     text-align: center; }
   nav h1 {
-    font-size: 42px;
+    font-size: 32px;
     font-weight: normal;
     text-shadow: 2px 2px 5px gray;
-    font-family: 'Marcellus SC', serif; }
+    font-family: 'Marcellus SC', serif;
+    padding-bottom: 5px; }
   nav h4 {
     font-size: 18px;
     text-shadow: 2px 2px 5px gray;
@@ -363,103 +559,12 @@ nav {
 @media screen and (max-width: 320px) {
   .rw-sentence {
     font-size: 9px; } }
-.location-header {
-  padding-top: 81px; }
-
-.footer-distributed {
-  background-color: #34E96B;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  width: 110%;
-  text-align: left;
-  font: bold 16px sans-serif; }
-
-/* Footer left */
-.footer-distributed .footer-left {
-  width: 40%; }
-
-/* Footer links */
-.footer-distributed .footer-left {
-  color: #ffffff;
-  margin: 13.5px 0 12px;
-  padding: 0; }
-
-.footer-distributed .footer-right {
-  color: black;
-  margin: 20px 0 12px;
-  padding: 0; }
-
-.footer-distributed .footer-links a {
-  display: inline-block;
-  line-height: 1.8;
-  text-decoration: none;
-  color: white; }
-
-.footer-links a:hover {
-  color: #27C7F7; }
-
-.footer-distributed .footer-company-name {
-  color: #8f9296;
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0; }
-
-/* Footer Right */
-.footer-distributed .footer-right {
-  width: 20%; }
-
-.footer-distributed .footer-company-about {
-  line-height: 20px;
-  color: #92999f;
-  font-size: 13px;
-  font-weight: normal;
-  margin: 0; }
-
-.footer-distributed .footer-company-about span {
-  display: block;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 20px; }
-
-.footer-distributed .footer-icons {
-  margin-top: 25px; }
-
-.footer-distributed .footer-icons a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  background-color: #33383b;
-  border-radius: 2px;
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
-  margin-right: 3px;
-  margin-bottom: 5px; }
-
-/* If you don't want the footer to be responsive, remove these media queries */
-@media (max-width: 880px) {
-  .footer-distributed {
-    font: bold 14px sans-serif; }
-
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center; }
-
-  .footer-distributed .footer-center i {
-    margin-left: 0; } }
 .about_text {
   display: flex;
   justify-content: center;
   padding-top: 100px;
   color: #27C7F7;
-  padding-bottom: 50px; }
+  padding-bottom: 30px; }
 
 .about_description {
   display: flex;
@@ -472,34 +577,79 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   max-width: 800px;
-  padding: 150px 8px;
+  padding: 90px 8px;
   margin: 0 auto; }
-  .about-container #thomas {
-    border: 0px solid #000;
-    border-radius: 5px;
-    height: 340px;
-    width: 330px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 0px 0px 5px gray;
-    transition: all .2s ease; }
-  .about-container #corbin {
-    border: 0px solid #000;
-    border-radius: 5px;
-    height: 340px;
-    width: 330px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 0px 0px 5px gray;
-    transition: all .2s ease; }
+
+.box {
+  cursor: pointer;
+  float: left;
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+  border: 0px solid #000;
+  border-radius: 5px;
+  height: 340px;
+  width: 330px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 0px 5px gray;
+  transition: all .2s ease; }
+
+.box img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  border: 0px solid #000;
+  border-radius: 5px;
+  height: 340px;
+  width: 330px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 0px 5px gray;
+  transition: all .2s ease; }
+
+.box .caption {
+  font-family: Tahoma;
+  font-size: .5em;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  color: #fff;
+  z-index: 100;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  left: 0;
+  opacity: 0;
+  width: 150px;
+  height: 150px;
+  text-align: left;
+  padding: 15px;
+  border: 0px solid #000;
+  border-radius: 5px;
+  height: 340px;
+  width: 330px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 0px 5px gray;
+  transition: all .2s ease; }
+
+.box:hover .fade-caption {
+  opacity: 1; }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   width: 100%;
   /* Full width */
-  padding: 12px;
+  padding: 3px;
   /* Some padding */
   border: 1px solid #ccc;
   /* Gray border */
@@ -517,7 +667,7 @@ input[type=text], select, textarea {
 input[type=submit] {
   background-color: #34E96B;
   color: white;
-  padding: 12px 20px;
+  padding: 9px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer; }
@@ -529,9 +679,9 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 .container {
   margin-top: 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   background-color: #27C7F7;
-  padding: 20px; }
+  padding: 15px; }
 
 .finerDetails {
   padding-top: 100px;
@@ -539,7 +689,7 @@ input[type=submit]:hover {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  height: 200px; }
+  height: 180px; }
 
 nav {
   position: fixed;
@@ -552,10 +702,11 @@ nav {
   nav > div {
     text-align: center; }
   nav h1 {
-    font-size: 42px;
+    font-size: 32px;
     font-weight: normal;
     text-shadow: 2px 2px 5px gray;
-    font-family: 'Marcellus SC', serif; }
+    font-family: 'Marcellus SC', serif;
+    padding-bottom: 5px; }
   nav h4 {
     font-size: 18px;
     text-shadow: 2px 2px 5px gray;
