@@ -1,5 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Merriweather:700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+  font-family: "Baloo";
+  src: url("../fonts/BalooBhaina-Regular.svg") format("svg"), url("../fonts/BalooBhaina-Regular.woff2") format("woff2"), url("../fonts/BalooBhaina-Regular.woff") format("woff"), url("../fonts/BalooBhaina-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.svg") format("svg"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"); }
 * {
   margin: 0;
   padding: 0; }
@@ -27,8 +33,7 @@ footer {
   .welcome-header h2, .welcome-header h4 {
     color: #fff;
     font-weight: normal;
-    text-shadow: 2px 2px 3px gray;
-    font-family: 'Marcellus SC', serif; }
+    text-shadow: 2px 2px 3px gray; }
   .welcome-header h2 {
     padding-top: 50px;
     padding-bottom: 100px;
@@ -36,7 +41,6 @@ footer {
   .welcome-header h4 {
     padding-bottom: 50px;
     margin-bottom: 40px;
-    font-family: "Lato", sans-serif;
     font-size: 36px;
     font-style: italic; }
   .welcome-header button {
@@ -45,7 +49,6 @@ footer {
 
 button {
   color: #fff;
-  font-family: "Lato", sans-serif;
   background: #34E96B;
   width: auto;
   border: 1px solid #c8c8c8;
@@ -224,7 +227,6 @@ img {
   z-index: 1; }
 
 .lower a {
-  font-family: 'Merriweather', serif;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 1px;
@@ -238,7 +240,6 @@ img {
   color: #1d76ad; }
 
 .box h2 {
-  font-family: 'Merriweather', serif;
   text-transform: uppercase;
   color: #fff;
   font-size: 24px;
@@ -317,14 +318,14 @@ nav {
     font-size: 32px;
     font-weight: normal;
     text-shadow: 2px 2px 5px gray;
-    font-family: 'Marcellus SC', serif;
+    font-family: 'Russo One', sans-serif;
     padding-bottom: 5px; }
   nav h4 {
     font-size: 18px;
     text-shadow: 2px 2px 5px gray;
     font-weight: normal;
     color: white;
-    font-family: 'Marcellus SC', serif; }
+    font-family: 'Russo One', sans-serif; }
   nav a {
     text-decoration: none;
     color: #fff; }
@@ -435,6 +436,92 @@ nav {
     box-shadow: 0px 0px 5px gray;
     margin-bottom: 20px;
     transition: all .2s ease; }
+
+#residential_show {
+  border: 0px solid #000;
+  border-radius: 5px;
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px gray;
+  margin-bottom: 20px;
+  transition: all .2s ease;
+  opacity: 0.4; }
+
+#powerwashing_show {
+  border: 0px solid #000;
+  border-radius: 5px;
+  height: 380px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px gray;
+  margin-bottom: 20px;
+  transition: all .2s ease;
+  opacity: 0.4;
+  padding-top: 20px; }
+
+#commercial_show {
+  border: 0px solid #000;
+  border-radius: 5px;
+  height: 380px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px gray;
+  margin-bottom: 20px;
+  transition: all .2s ease;
+  opacity: 0.3; }
+
+#shampoo_show {
+  border: 0px solid #000;
+  border-radius: 5px;
+  height: 380px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px gray;
+  margin-bottom: 20px;
+  transition: all .2s ease;
+  opacity: 0.3; }
+
+.service-info {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: black; }
+
+.call {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #27C7F7;
+  font-size: 20px; }
+
+.info-box {
+  display: flex;
+  text-align: center; }
+
+.text {
+  font-family: 'Russo One', sans-serif;
+  font-size: 50px;
+  padding-top: 100px;
+  color: #27C7F7;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 30px;
+  width: 100%; }
 
 .rw-wrapper {
   width: 80%;
@@ -570,14 +657,15 @@ nav {
   display: flex;
   justify-content: center;
   color: #34E96B;
-  font-size: 22px; }
+  font-size: 22px;
+  text-align: center; }
 
 .about-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 800px;
-  padding: 90px 8px;
+  padding: 70px 8px;
   margin: 0 auto; }
 
 .box {
@@ -594,7 +682,9 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0px 0px 5px gray;
-  transition: all .2s ease; }
+  transition: all .2s ease;
+  display: flex;
+  justify-content: center; }
 
 .box img {
   position: absolute;
@@ -630,8 +720,9 @@ nav {
   opacity: 0;
   width: 150px;
   height: 150px;
-  text-align: left;
+  text-align: center;
   padding: 15px;
+  padding-right: 10px;
   border: 0px solid #000;
   border-radius: 5px;
   height: 340px;
@@ -640,10 +731,18 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0px 0px 5px gray;
-  transition: all .2s ease; }
+  transition: all .2s ease;
+  font-size: 15px; }
 
 .box:hover .fade-caption {
   opacity: 1; }
+
+.caption-header {
+  font-size: 20px;
+  color: #27C7F7; }
+
+.bio {
+  padding-right: 20px; }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -705,14 +804,14 @@ nav {
     font-size: 32px;
     font-weight: normal;
     text-shadow: 2px 2px 5px gray;
-    font-family: 'Marcellus SC', serif;
+    font-family: 'Russo One', sans-serif;
     padding-bottom: 5px; }
   nav h4 {
     font-size: 18px;
     text-shadow: 2px 2px 5px gray;
     font-weight: normal;
     color: white;
-    font-family: 'Marcellus SC', serif; }
+    font-family: 'Russo One', sans-serif; }
   nav a {
     text-decoration: none;
     color: #fff; }
