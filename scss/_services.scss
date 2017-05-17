@@ -29,6 +29,7 @@ color: $skyblue
   flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 50px;
+  padding-bottom: 100px;
 
   #residential {
     border: 0px solid #000;
@@ -161,11 +162,12 @@ color: $skyblue
 .call {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-left: 10px;
   padding-right: 10px;
   color: $blue;
   font-size: 20px;
+ flex-wrap: wrap;
 
 }
 
