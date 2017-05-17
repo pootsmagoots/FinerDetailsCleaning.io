@@ -27,10 +27,6 @@
 
 }
 
-
-
-
-
 .box {
 
    cursor: pointer;
@@ -107,14 +103,11 @@
     // margin-bottom: 50px;
     transition: all .2s ease;
     font-size: 15px;
-
-
 }
 
 .box:hover .fade-caption {
    opacity: 1;
  }
-
 
 .caption-header{
   font-size: 20px;
