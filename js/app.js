@@ -124,19 +124,19 @@ function RouterFunction($stateProvider){
   })
   .state("servicesShow5", {
     url:"/services/Repetitive-cleaning",
-    templateUrl: "js/ng-views/services/show4.html",
+    templateUrl: "js/ng-views/services/show5.html",
     controller: "ServiceShow5Controller",
     controllerAs: "vm"
   })
   .state("servicesShow6", {
     url:"/services/Garage-cleaning",
-    templateUrl: "js/ng-views/services/show4.html",
+    templateUrl: "js/ng-views/services/show6.html",
     controller: "ServiceShow6Controller",
     controllerAs: "vm"
   })
   .state("servicesShow7", {
     url:"/services/window-cleaning",
-    templateUrl: "js/ng-views/services/show4.html",
+    templateUrl: "js/ng-views/services/show7.html",
     controller: "ServiceShow7Controller",
     controllerAs: "vm"
   })
