@@ -56,6 +56,26 @@ angular
   "$stateParams",
   ServiceShow3Controller
 ])
+.controller("ServiceShow4Controller", [
+  "$state",
+  "$stateParams",
+  ServiceShow4Controller
+])
+.controller("ServiceShow5Controller", [
+  "$state",
+  "$stateParams",
+  ServiceShow5Controller
+])
+.controller("ServiceShow6Controller", [
+  "$state",
+  "$stateParams",
+  ServiceShow6Controller
+])
+.controller("ServiceShow7Controller", [
+  "$state",
+  "$stateParams",
+  ServiceShow7Controller
+])
 
 //Routes
 function RouterFunction($stateProvider){
@@ -95,6 +115,30 @@ function RouterFunction($stateProvider){
     templateUrl: "js/ng-views/services/show3.html",
     controller: "ServiceShow3Controller",
     controllersAs: "vm"
+  })
+  .state("servicesShow4", {
+    url:"/services/One-time-cleaning",
+    templateUrl: "js/ng-views/services/show4.html",
+    controller: "ServiceShow4Controller",
+    controllerAs: "vm"
+  })
+  .state("servicesShow5", {
+    url:"/services/Repetitive-cleaning",
+    templateUrl: "js/ng-views/services/show4.html",
+    controller: "ServiceShow5Controller",
+    controllerAs: "vm"
+  })
+  .state("servicesShow6", {
+    url:"/services/Garage-cleaning",
+    templateUrl: "js/ng-views/services/show4.html",
+    controller: "ServiceShow6Controller",
+    controllerAs: "vm"
+  })
+  .state("servicesShow7", {
+    url:"/services/window-cleaning",
+    templateUrl: "js/ng-views/services/show4.html",
+    controller: "ServiceShow7Controller",
+    controllerAs: "vm"
   })
   .state("contact", {
     url:"/contact",
@@ -138,5 +182,17 @@ function ServiceShow2Controller( $state, $stateParams) {
 
 }
 function ServiceShow3Controller( $state, $stateParams) {
+
+}
+function ServiceShow4Controller( $state, $stateParams) {
+
+}
+function ServiceShow5Controller( $state, $stateParams) {
+
+}
+function ServiceShow6Controller( $state, $stateParams) {
+
+}
+function ServiceShow7Controller( $state, $stateParams) {
 
 }

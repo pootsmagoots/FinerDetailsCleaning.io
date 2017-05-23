@@ -211,6 +211,16 @@ nav {
   letter-spacing: .15em;
   padding-left: 10px; }
 
+.style_text_garage {
+  color: #009cff;
+  letter-spacing: .15em;
+  padding-left: 20px; }
+
+.style_text_window {
+  color: #009cff;
+  letter-spacing: .15em;
+  padding-left: 20px; }
+
 .services {
   display: flex;
   flex-wrap: wrap;
@@ -244,6 +254,10 @@ nav {
     color: #34E96B; }
   .services-container .style_text_shampoo:hover {
     color: #34E96B; }
+  .services-container .style_text_garage:hover {
+    color: #34E96B; }
+  .services-container .style_text_window:hover {
+    color: #34E96B; }
   .services-container #commercial {
     border: 0px solid #000;
     border-radius: 5px;
@@ -269,6 +283,54 @@ nav {
     margin-bottom: 20px;
     transition: all .2s ease; }
   .services-container #powerwashing {
+    border: 0px solid #000;
+    border-radius: 5px;
+    height: 240px;
+    width: 230px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px gray;
+    margin-bottom: 20px;
+    transition: all .2s ease; }
+  .services-container #one-time {
+    border: 0px solid #000;
+    border-radius: 5px;
+    height: 240px;
+    width: 230px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px gray;
+    margin-bottom: 20px;
+    transition: all .2s ease; }
+  .services-container #repetitive {
+    border: 0px solid #000;
+    border-radius: 5px;
+    height: 240px;
+    width: 230px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px gray;
+    margin-bottom: 20px;
+    transition: all .2s ease; }
+  .services-container #garage {
+    border: 0px solid #000;
+    border-radius: 5px;
+    height: 240px;
+    width: 230px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px gray;
+    margin-bottom: 20px;
+    transition: all .2s ease; }
+  .services-container #window {
     border: 0px solid #000;
     border-radius: 5px;
     height: 240px;

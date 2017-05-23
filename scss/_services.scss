@@ -9,6 +9,17 @@
   letter-spacing: .15em;
   padding-left: 10px;
 }
+.style_text_garage{
+  color: $skyblue;
+  letter-spacing: .15em;
+  padding-left: 20px;
+}
+.style_text_window{
+  color: $skyblue;
+  letter-spacing: .15em;
+  padding-left: 20px;
+}
+
 
 
 .services {
@@ -48,6 +59,12 @@ color: $skyblue
      color: $green;
    }
    .style_text_shampoo:hover {
+     color: $green;
+   }
+   .style_text_garage:hover {
+     color: $green;
+   }
+   .style_text_window:hover {
      color: $green;
    }
 
@@ -90,6 +107,58 @@ color: $skyblue
      margin-bottom: 20px;
      transition: all .2s ease;
     }
+    #one-time {
+      border: 0px solid #000;
+       border-radius: 5px;
+       height: 240px;
+       width: 230px;
+       background-size: cover;
+     background-repeat: no-repeat;
+      background-position: center;
+       cursor: pointer;
+       box-shadow: 0px 0px 5px gray;
+       margin-bottom: 20px;
+       transition: all .2s ease;
+      }
+      #repetitive {
+        border: 0px solid #000;
+         border-radius: 5px;
+         height: 240px;
+         width: 230px;
+         background-size: cover;
+       background-repeat: no-repeat;
+        background-position: center;
+         cursor: pointer;
+         box-shadow: 0px 0px 5px gray;
+         margin-bottom: 20px;
+         transition: all .2s ease;
+    }
+    #garage {
+      border: 0px solid #000;
+       border-radius: 5px;
+       height: 240px;
+       width: 230px;
+       background-size: cover;
+     background-repeat: no-repeat;
+      background-position: center;
+       cursor: pointer;
+       box-shadow: 0px 0px 5px gray;
+       margin-bottom: 20px;
+       transition: all .2s ease;
+      }
+      #window {
+        border: 0px solid #000;
+         border-radius: 5px;
+         height: 240px;
+         width: 230px;
+         background-size: cover;
+       background-repeat: no-repeat;
+        background-position: center;
+         cursor: pointer;
+         box-shadow: 0px 0px 5px gray;
+         margin-bottom: 20px;
+         transition: all .2s ease;
+        }
 }
 
   #residential_show {
